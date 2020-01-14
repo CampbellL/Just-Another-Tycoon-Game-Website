@@ -1,0 +1,13 @@
+<nav [ngClass]="{'translucent' : translucent}">
+  <div id="logo">Coffee Game</div>
+  <ul class="nav-links" [ngClass]="{'nav-open': navOpen}">
+    <li><a href="#">Home</a></li>
+    <li><a href="#howtoplay">How to Play</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="burger" [ngClass]="{'toggle': navOpen}" (click)="openNav()">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+</nav>
